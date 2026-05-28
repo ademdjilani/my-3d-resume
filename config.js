@@ -18,7 +18,7 @@ window.portfolioData = {
     // Copy this block and change the name, desc, and tech.
     {
       name: "First Project (cooming soon)",
-      desc: "A stunning digital solution and responsive website built to address modern challenges. 
+      desc: "A stunning digital solution and responsive website designed for a candle shop. 
       tech: ["HTML", "CSS", "JavaScript"],
     },
   ],
