@@ -9,7 +9,7 @@
 <svelte:head>
 	<title>About {resume.about.name} — {resume.about.role}</title>
 	<meta name="description" content="{resume.about.bio} {resume.about.facts.join('. ')}." />
-	<link rel="canonical" href="https://alexmorgan.dev/about" />
+	<link rel="canonical" href="https://ademdjilani.github.io/about" />
 </svelte:head>
 
 <div class="page">

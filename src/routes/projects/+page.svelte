@@ -8,7 +8,7 @@
 <svelte:head>
 	<title>Projects — {resume.about.name}</title>
 	<meta name="description" content="Portfolio projects by {resume.about.name}: {resume.projects.map(p => p.name).join(', ')}. {resume.about.role} specialising in {resume.skills.frontend.slice(0,3).join(', ')}." />
-	<link rel="canonical" href="https://alexmorgan.dev/projects" />
+	<link rel="canonical" href="https://ademdjilani.github.io/projects" />
 </svelte:head>
 
 <div class="page">

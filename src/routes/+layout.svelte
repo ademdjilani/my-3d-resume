@@ -15,7 +15,7 @@
 		jobTitle: resume.about.role,
 		description: resume.about.bio,
 		email: `mailto:${resume.contact.email}`,
-		url: 'https://alexmorgan.dev',
+		url: 'https://ademdjilani.github.io',
 		sameAs: [
 			`https://${resume.contact.github}`,
 			`https://${resume.contact.linkedin}`
@@ -37,12 +37,12 @@
 		name: `${resume.about.name} — Interactive 3D Portfolio`,
 		description: `An interactive 3D resume built with Three.js and SvelteKit, showcasing ${resume.about.role} skills.`,
 		author: { '@type': 'Person', name: resume.about.name },
-		url: 'https://alexmorgan.dev',
+		url: 'https://ademdjilani.github.io',
 		keywords: 'frontend developer portfolio, Three.js developer, SvelteKit portfolio, interactive resume, WebGL resume',
 		inLanguage: 'en'
 	});
 
-	const SITE_URL = 'https://alexmorgan.dev';
+	const SITE_URL = 'https://ademdjilani.github.io';
 	const OG_IMAGE = `${SITE_URL}/og-image.png`;
 </script>
 

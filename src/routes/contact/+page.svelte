@@ -8,7 +8,7 @@
 <svelte:head>
 	<title>Contact {resume.about.name} — {resume.about.role}</title>
 	<meta name="description" content="Get in touch with {resume.about.name}, a {resume.about.role} based in {resume.contact.location}. {resume.contact.available ? 'Currently open to new opportunities.' : ''}" />
-	<link rel="canonical" href="https://alexmorgan.dev/contact" />
+	<link rel="canonical" href="https://ademdjilani.github.io/contact" />
 </svelte:head>
 
 <div class="page">
