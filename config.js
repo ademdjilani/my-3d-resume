@@ -17,8 +17,8 @@ window.portfolioData = {
     // How to add your projects here in the future:
     // Copy this block and change the name, desc, and tech.
     {
-      name: "First Project (Placeholder)",
-      desc: "A stunning digital solution and responsive website built to address modern challenges. (You can customize this in config.js and src/lib/data/resume.ts)",
+      name: "First Project (cooming soon)",
+      desc: "A stunning digital solution and responsive website built to address modern challenges. 
       tech: ["HTML", "CSS", "JavaScript"],
     },
   ],
