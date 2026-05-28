@@ -34,7 +34,7 @@ window.portfolioData = {
     github:    "github.com/ademdjilani",
     linkedin:  "linkedin.com/in/adem-abdeldjaouad-djilani-619990405",
     twitter:   "",
-    location:  "El Eulma, Setif, Algeria",
+    location:  "El Eulma Setif Algeria",
     available: true,
   },
 };
