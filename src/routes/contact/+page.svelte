@@ -33,14 +33,10 @@
 					<dt>GitHub</dt>
 					<dd><a href="https://{resume.contact.github}" rel="noopener noreferrer">{resume.contact.github}</a></dd>
 				</div>
-				<div class="dl-row">
+				< class="dl-row">
 					<dt>LinkedIn</dt>
 					<dd><a href="https://{resume.contact.linkedin}" rel="noopener noreferrer">{resume.contact.linkedin}</a></dd>
-				</div>
-				<div class="dl-row">
-					<dt>Twitter</dt>
-					<dd>{resume.contact.twitter}</dd>
-				</div>
+
 				<div class="dl-row">
 					<dt>Location</dt>
 					<dd>{resume.contact.location}</dd>

@@ -25,9 +25,10 @@ function buildPanelContent(key: SceneObjectKey): PanelContent {
 				.map(
 					(p) => `
 					<div class="panel-card">
-						<h3>${p.name}</h3>
+						<h3>${p.name}${(p as any).status ? ` <span style="font-size:11px;font-weight:400;opacity:0.8">${(p as any).status}</span>` : ''}</h3>
 						<p>${p.desc}</p>
 						<div class="tech-tags">${p.tech.map((t) => `<span>${t}</span>`).join('')}</div>
+						${p.url ? `<a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;font-size:12px;color:#88aaff;text-decoration:none;">View project →</a>` : ''}
 					</div>`
 				)
 				.join('');
@@ -62,7 +63,7 @@ function buildPanelContent(key: SceneObjectKey): PanelContent {
 		}
 
 		case 'character': {
-			const { email, github, linkedin, twitter, location, available } = resume.contact;
+			const { email, github, linkedin, location, available } = resume.contact;
 			return {
 				title: 'Contact',
 				html: `
@@ -72,7 +73,6 @@ function buildPanelContent(key: SceneObjectKey): PanelContent {
 							<li><strong>Email</strong> <a href="mailto:${email}">${email}</a></li>
 							<li><strong>GitHub</strong> <a href="https://${github}" target="_blank" rel="noopener">${github}</a></li>
 							<li><strong>LinkedIn</strong> <a href="https://${linkedin}" target="_blank" rel="noopener">${linkedin}</a></li>
-							<li><strong>Twitter</strong> ${twitter}</li>
 							<li><strong>Location</strong> ${location}</li>
 						</ul>
 					</div>`
@@ -95,6 +95,20 @@ export function closePanel() {
 	setTimeout(() => {
 		panel.content = null;
 	}, 300);
+}
+
+// ─── Scene reset request ──────────────────────────────────────────────────────
+// Panel's close button sets this to true; Scene.svelte watches it via $effect
+// and calls its internal doResetCamera(), then clears this flag.
+
+export const sceneReset = $state({ requested: false });
+
+export function requestSceneReset() {
+	sceneReset.requested = true;
+}
+
+export function clearSceneReset() {
+	sceneReset.requested = false;
 }
 
 // ─── Help modal ───────────────────────────────────────────────────────────────

@@ -19,6 +19,7 @@ export interface ResumeProject {
 	desc: string;
 	tech: string[];
 	url?: string;
+	status?: string;
 }
 
 export interface ResumeSkills {
@@ -31,7 +32,6 @@ export interface ResumeContact {
 	email: string;
 	github: string;
 	linkedin: string;
-	twitter: string;
 	location: string;
 	available: boolean;
 }
@@ -62,28 +62,30 @@ export const resume: ResumeData = {
 	},
 
 	projects: [
-		// 💡 كيف تضيف مشاريعك هنا مستقبلاً:
-		// قم بنسخ هذا الجزء وتغيير الاسم (name)، الوصف (desc)، والتقنيات (tech).
-		// How to add your projects here in the future:
-		// Copy this block and change the name, desc, and tech.
 		{
-			name: 'First Project (cooming soon)',
+			name: 'Bougie Creation',
+			desc: 'A luxury handcrafted candle shop website featuring an interactive 3D product viewer, full product catalog and order system. Built for a real client.',
+			tech: ['HTML', 'CSS', 'JavaScript', 'Three.js'],
+			url: 'https://bougiecreation.vercel.app',
+			status: '🚧 In Progress'
+		},
+		{
+			name: 'First Project (coming soon)',
 			desc: 'A stunning digital solution and responsive website designed for a candle shop.',
 			tech: ['HTML', 'CSS', 'JavaScript']
 		}
 	],
 
 	skills: {
-		frontend: ['HTML5 / CSS3', 'JavaScript', 'Responsive Web Design', 'Web Development'],
-		backend: ['Full-Stack Web Development', 'Problem Solving', 'Web APIs / Logic'],
-		tools: ['Git / GitHub', 'Teamwork', 'Communication', 'Microsoft Office']
+		frontend: ['HTML5 / CSS3', 'JavaScript (ES6+)', 'React', 'SvelteKit', 'Three.js', 'Responsive Web Design'],
+		backend: ['Node.js', 'REST APIs', 'Full-Stack Development', 'Problem Solving'],
+		tools: ['Git / GitHub', 'Vite', 'VS Code', 'Vercel / Deployment', 'Microsoft Office']
 	},
 
 	contact: {
 		email: 'ademdjilani1@gmail.com',
 		github: 'github.com/ademdjilani',
 		linkedin: 'linkedin.com/in/adem-abdeldjaouad-djilani-619990405',
-		twitter: '',
 		location: 'El Eulma, Setif, Algeria',
 		available: true
 	}

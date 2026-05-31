@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { panel, closePanel } from '$lib/stores/ui.svelte.js';
+	import { panel, closePanel, requestSceneReset } from '$lib/stores/ui.svelte.js';
 	import { setFocus } from '$lib/stores/scene.svelte.js';
 
 	function handleClose() {
 		setFocus(null);
 		closePanel();
+		requestSceneReset();
 	}
 
 	function handleKeydown(e: KeyboardEvent) {
